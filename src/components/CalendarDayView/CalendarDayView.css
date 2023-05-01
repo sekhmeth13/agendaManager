@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.calendar {
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.time-slots {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.time-slot:hover {
+    border: 1px solid #2ecc71;
+}
+
+.time-slot span {
+    width: 80px;
+    text-align: right;
+    margin-right: 20px;
+    color: #888;
+}
+
+.appointment {
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: absolute;
+    left: 87px;
+    border: 1px solid #2ecc71;
+    background-color: rgba(46, 204, 113, 0.1);
+    padding: 5px 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.appointment span {
+    font-size: 14px;
+    color: #2ecc71;
+}
